@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>ShowMe - The Cats</title>
-    <link href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!--  GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
 </head>
 <body>
 
-    <h1>Cats</h1>
+    <h1>The rating cats</h1>
+
+    <section class="cat-container">
+        <div class="card">
+            <img id="cat-img" class="cat-pic" width="500" src="" alt="">
+            <h1 class="card-title">Card Title</h1>
+            <hr>
+            <button id="cat-btn" class="next-btn" type="button" >Nueva Imagen</button>
+        </div>
+    </section>
 
 
-    <img id="cat-img" width="500" src="" alt="">
-    <br>
-    <button id="cat-btn" type="button">Nueva Imagen</button>
+
+
+
+
+
+
 
 
 
     <script src="main.js"></script>
+    <script src="animations.js"></script>
+
 </body>
 </html>
