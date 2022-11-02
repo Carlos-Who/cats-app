@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+:root {
+    --clr-primary: #F2F2F2;
+    --titles: 'Annie Use Your Telescope', cursive;
+    --buttons: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #e19c9c, #e6c29c, #63b097);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    height: 100vh;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-family: var(--buttons);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 3rem;
+}
+
+
+.card {
+    max-width: 35rem;
+    margin: 1rem;
+    /* From https://css.glass */
+    background: rgba(243, 243, 243, 0.93);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.9px);
+    -webkit-backdrop-filter: blur(16.9px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-title {
+    /*font-size: clamp(1.8rem, 2.6vw, 2.5rem);*/
+    text-align: center;
+}
+
+.card-btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*background-color: #ed667f;*/
+}
+
+.card-btn {
+    font-family: var(--buttons);
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    font-weight: 400;
+    padding: .8em 1.5em;
+    margin: .5rem;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.primary {
+    color: #1a4c03;
+    border: 1px solid #66b279;
+    background-color: rgba(114, 230, 104, 0.24);
+
+}
+.primary:hover {
+    transform: scale(1.05);
+    background-color: rgba(125, 218, 148, 0.65);
+}
+
+
+
+.favorite {
+    color: #cc236d;
+    border: 1px solid #f16b8e;
+    background-color: rgba(241, 197, 209, 0.25);
+}
+.favorite:hover {
+    transform: scale(1.05);
+    background-color: rgba(243, 189, 204, 0.64);
+}
+
+
+.char {
+    font-family: var(--titles);
+    font-size: clamp(2rem, 2vw, 22rem);
+    font-weight: 800;
+    -webkit-text-stroke: 0.2px black;
+}
+
+.char-r {
+    color: #da0b80;
+}
+.char-a {
+    color: #08ba8b;
+}
+.char-n {
+    color: #da8d17;
+}
+.char-d {
+    color: #1772da;
+}
+.char-o {
+    color: #61b20a;
+}
+.char-m {
+    color: #da4517;
+}
+.char-c {
+    color: #c1045e;
+}
+.char-t {
+    color: #daba17;
+}
+.char-s {
+    color: #7363ff;
+}
+
+/* Favorites section */
+
+
+.container-fav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 23rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.fav-title {
+    margin: 0 auto;
+}
+
+.container-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: tomato;
+}
+
+.g-item {
+    background-color: cadetblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        background-color: tomato;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: tomato;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: tomato;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

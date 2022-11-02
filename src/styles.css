@@ -1,3 +1,6 @@
+
+
+
 body {
     margin: 0 !important;
     height: 100vh;
@@ -11,9 +14,8 @@ body {
 }
 
 .card {
-    width: 500px;
-    height: 560px;
-    /*padding: 15px;*/
+    min-width: 3222rem;
+    height: auto;
     margin: 3rem;
     border: 1px solid #abadb3;
     border-radius: 5px;
@@ -24,8 +26,8 @@ body {
 }
 
 .cat-pic {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 5px 5px 0 0;
 }
 
@@ -43,14 +45,20 @@ hr {
     background-repeat: no-repeat !important;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+
+}
+
 .next-btn {
     color: whitesmoke;
-    font-weight: 500;
-    display: block;
-    font-size: 14px;
+    font-weight: 400;
+    /*display: block;*/
+    font-size: 1rem;
     font-family: Montserrat;
-    padding: 1em 2.5em;
-    margin: 2em auto;
+    padding: 1rem;
+    margin: 0.8rem auto;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -60,3 +68,91 @@ hr {
 .next-btn:hover {
     background-color: #1e9ca7;
 }
+
+/* Favorites */
+
+.fav-container {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fffefb;
+}
+
+.fav-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 300px;
+    border: 0;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2d3748;
+    padding: 5px;
+}
+
+.fav-img {
+    width: 100%;
+    height: 85%;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: none;
+    background-color: darkgray;
+}
+
+.rm-fav-btn {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 0;
+
+    border-radius: 5px;
+    font-family: var(--buttons);
+    background-color: #ed667f;
+}
+
+.rm-fav-btn:hover {
+    cursor: pointer;
+    background-color: #ec415e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

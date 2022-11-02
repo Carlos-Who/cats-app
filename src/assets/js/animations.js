@@ -8,7 +8,7 @@ mainTimeLine.from(".card", {
 }).from(".card-title", {
     opacity: 0,
     y: 100,
-}).from(".next-btn", {
+}).from(".card-btn-group", {
     opacity: 0,
     y: 100,
 });

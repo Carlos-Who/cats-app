@@ -3,39 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>ShowMe - The Cats</title>
-    <link rel="stylesheet" href="styles.css">
 
+    <!-- Custom Css -->
+<!--    <link rel="stylesheet" href="../src/styles.css">-->
+    <link rel="stylesheet" href="../src/assets/css/main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--  GSAP  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+    </style>
+
 </head>
 <body>
 
-    <h1>The rating cats</h1>
-
-    <section class="cat-container">
+    <section class="container">
         <div class="card">
-            <img id="cat-img" class="cat-pic" width="500" src="" alt="">
-            <h1 class="card-title">Card Title</h1>
-            <hr>
-            <button id="cat-btn" class="next-btn" type="button" >Nueva Imagen</button>
+            <img id="card-img" class="card-img" width="500"  src="" alt="">
+            <h1 class="card-title">
+                <span class="char char-r">R</span><span class="char char-a">a</span><span class="char char-n">n</span><span class="char char-d">d</span><span class="char char-o">o</span><span class="char char-m">m</span><span class="char char-space">-</span><span class="char char-c">C</span><span class="char char-a">a</span><span class="char char-t">t</span><span class="char char-s">s</span>
+            </h1>
+            <div class="card-btn-group">
+                <button id="favorite-btn" class="card-btn favorite" type="button" ><i class="fa-solid fa-heart"></i></button>
+                <button id="next-btn" class="card-btn primary" type="button">Siguiente <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
         </div>
     </section>
 
 
 
 
+    <section id="fav-section" class="container-fav">
+        <h1 class="fav-title">Favorites</h1>
+        <div class="container-grid">
+            <div class="g-item">One</div>
+            <div class="g-item">Two</div>
+            <div class="g-item">Three</div>
+            <div class="g-item">Four</div>
+            <div class="g-item">Five</div>
+        </div>
+    </section>
+    <!--        <div class="fav-card">-->
+    <!--            <img class="fav-img" src="" width="500" alt="">-->
+    <!--            <button id="" class="rm-fav-btn" type="button" >Remove</button>-->
+    <!--        </div>-->
+
+
+<!--    <button type="button" class="btn btn-primary">Primary</button>-->
 
 
 
-
-
-
-
-    <script src="main.js"></script>
-    <script src="animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 
 </body>
 </html>
