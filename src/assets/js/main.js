@@ -13,9 +13,14 @@ async function getPictures() {
     try {
         const res = await fetch(API_URL_RANDOM);
         const data = await res.json();
-        console.log(data);
+        console.log("Data", data);
         const img = document.getElementById('card-img');
         img.src = data[0].url;
+
+        // Add to favorites
+        const favButton = document.getElementById('favorite-btn');
+        // favButton.addEventListener('click', saveToFavorites(data[0].id);
+        favButton.onclick = saveToFavorites(data[0].id);
 
     } catch (err) {
         console.error(err);
@@ -24,10 +29,11 @@ async function getPictures() {
 
 async function getFavoritesPictures() {
 
-        const res = await fetch(API_URL_FAVORITES);
-        const data = await res.json();
-        console.log('Favorites');
-        console.log(data);
+    document.getElementById('fav-section').innerHTML = "";
+    const res = await fetch(API_URL_FAVORITES);
+    const data = await res.json();
+    console.log('Favorites');
+    console.log(data);
 
 
     data.forEach(cat => {
@@ -41,9 +47,10 @@ async function getFavoritesPictures() {
 
         cardImg.src = cat.image.url;
 
-        card.classList.add("fav-card");
+        card.classList.add("card");
         cardImg.classList.add("fav-img");
         cardButton.classList.add("rm-fav-btn");
+        cardButton.id
 
         favSection.appendChild(card);
         card.appendChild(cardImg);
@@ -52,19 +59,20 @@ async function getFavoritesPictures() {
     });
 }
 
-async function saveToFavorites() {
+async function saveToFavorites(id) {
     const res = await fetch(API_URL_FAVORITES, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            image_id: "7mm"
+            image_id: id
         })
     });
 
     console.log('Save');
     console.log(res);
+    getFavoritesPictures();
 }
 
 
@@ -73,15 +81,13 @@ async function loadPictures() {
 }
 
 getPictures();
-// getFavoritesPictures();
+getFavoritesPictures();
 
 // Next Picture
 const nextButton = document.getElementById('next-btn');
 nextButton.addEventListener('click', loadPictures);
 
-// Add to favorites
-const favButton = document.getElementById('favorite-btn');
-favButton.addEventListener('click', saveToFavorites);
+
 
 
 

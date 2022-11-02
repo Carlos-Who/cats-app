@@ -63,7 +63,6 @@ h1 {
 }
 
 .card-title {
-    /*font-size: clamp(1.8rem, 2.6vw, 2.5rem);*/
     text-align: center;
 }
 
@@ -92,12 +91,11 @@ h1 {
     background-color: rgba(114, 230, 104, 0.24);
 
 }
+
 .primary:hover {
     transform: scale(1.05);
     background-color: rgba(125, 218, 148, 0.65);
 }
-
-
 
 .favorite {
     color: #cc236d;
@@ -108,7 +106,6 @@ h1 {
     transform: scale(1.05);
     background-color: rgba(243, 189, 204, 0.64);
 }
-
 
 .char {
     font-family: var(--titles);
@@ -151,22 +148,35 @@ h1 {
 .container-fav {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: auto;
-    height: 23rem;
+    height: auto;
     margin: 1rem;
     border-radius: 5px;
     background-color: whitesmoke;
 }
 .fav-title {
+    font-family: var(--buttons);
+    font-size: clamp(2rem, 2vw, 22rem);
     margin: 0 auto;
 }
 
 .container-grid {
     display: grid;
-    gap: 1rem;
+    grid-gap: 0.5rem;
+    max-height: 35rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background-color: tomato;
 }
+
+
+.fav-img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
 
 .g-item {
     background-color: cadetblue;
@@ -193,7 +203,7 @@ h1 {
 @media only screen and (max-width: 600px) {
     .container-grid {
         display: grid;
-        gap: 1rem;
+        grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr;
         background-color: tomato;
     }
@@ -202,7 +212,7 @@ h1 {
 @media only screen and (min-width: 600px) {
     .container-grid {
         display: grid;
-        gap: 1rem;
+        grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr 1fr;
         background-color: tomato;
     }
@@ -215,7 +225,7 @@ h1 {
 @media only screen and (min-width: 992px) {
     .container-grid {
         display: grid;
-        gap: 1rem;
+        grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         background-color: tomato;
     }
