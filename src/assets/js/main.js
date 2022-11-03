@@ -19,8 +19,10 @@ async function getPictures() {
 
         // Add to favorites
         const favButton = document.getElementById('favorite-btn');
-        // favButton.addEventListener('click', saveToFavorites(data[0].id);
-        favButton.onclick = saveToFavorites(data[0].id);
+        favButton.addEventListener('click', ()=> {
+            saveToFavorites(data[0].id);
+        });
+        // favButton.onclick = saveToFavorites(data[0].id);
 
     } catch (err) {
         console.error(err);

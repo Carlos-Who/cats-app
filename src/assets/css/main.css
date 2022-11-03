@@ -111,7 +111,7 @@ h1 {
     font-family: var(--titles);
     font-size: clamp(2rem, 2vw, 22rem);
     font-weight: 800;
-    -webkit-text-stroke: 0.2px black;
+    -webkit-text-stroke: 0.1px #5a5a5a;
 }
 
 .char-r {
@@ -151,7 +151,7 @@ h1 {
     justify-content: space-evenly;
     width: auto;
     height: auto;
-    margin: 1rem;
+    margin: 0 1rem 1rem;
     border-radius: 5px;
     background-color: whitesmoke;
 }
@@ -168,7 +168,6 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: tomato;
 }
 
 
