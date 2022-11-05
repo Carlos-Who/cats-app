@@ -59,6 +59,7 @@ h1 {
 
 .card-img {
     width: 100%;
+    max-height: 550px;
     border-radius: 8px 8px 0 0;
 }
 
@@ -151,7 +152,7 @@ h1 {
     justify-content: space-evenly;
     width: auto;
     height: auto;
-    margin: 0 1rem 1rem;
+    margin: 0 1rem 13rem;
     border-radius: 5px;
     background-color: whitesmoke;
 }
@@ -173,6 +174,7 @@ h1 {
 
 .fav-img {
     width: 100%;
+    height: 310px;
     border-radius: 8px 8px 0 0;
 }
 
@@ -204,7 +206,7 @@ h1 {
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr;
-        background-color: tomato;
+        /*background-color: tomato;*/
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -213,7 +215,7 @@ h1 {
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: tomato;
+        /*background-color: tomato;*/
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -226,7 +228,7 @@ h1 {
         display: grid;
         grid-gap: 0.5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: tomato;
+        /*background-color: tomato;*/
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
